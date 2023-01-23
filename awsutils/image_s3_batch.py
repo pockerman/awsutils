@@ -17,9 +17,7 @@ class ImagePathBatch(object):
     def read(self, image_prefixes: tuple, valid_image_extensions: tuple,
              delimiter: str = '/'):
 
-        client = get_aws_s3_client(region_name=self.aws_bucket_credentials.aws_region,
-                                   aws_access_key_id=self.aws_bucket_credentials.aws_access_key,
-                                   aws_secret_access_key=self.aws_bucket_credentials.aws_secret_access_key)
+        client = get_aws_s3_client(credentials=self.aws_bucket_credentials)
 
         n_extensions = len(valid_image_extensions)
 
