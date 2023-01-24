@@ -2,12 +2,12 @@
 requires = ["hatchling", "boto3"]
 build-backend = "hatchling.build"
 [project]
-name = "awsutils"
+name = "mir-aws-utils"
 version = "0.0.3"
 authors = [
   { name="Alexandros Giavaras", email="a.giavaras@gmail.com" },
 ]
-description = "Various utilities for working with AWS in Python 3."
+description = "Various utilities for working with AWS in Python 3. for the mir project"
 readme = "README.md"
 requires-python = ">=3.9"
 classifiers = [
