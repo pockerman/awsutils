@@ -4,8 +4,8 @@ a batch of images on S3
 """
 import os
 from typing import List
-from awsutils.aws_credentials import AWSCredentials_S3
-from awsutils.boto3_client import get_aws_s3_client
+from src.awsutils.aws_credentials import AWSCredentials_S3
+from src.awsutils.boto3_client import get_aws_s3_client
 
 
 class ImagePathBatch(object):
